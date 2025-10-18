@@ -18,10 +18,14 @@ const nextConfig = {
   
   // API Routes configuration
   async rewrites() {
+    // Get API URL with explicit fallback to prevent undefined
+    const apiBase = process.env.NEXT_PUBLIC_API_URL || 'https://fundchain-backend.onrender.com';
+
+    // Always provide a valid destination URL
     return [
       {
         source: '/api/:path*',
-        destination: `${process.env.NEXT_PUBLIC_API_URL}/api/:path*`,
+        destination: `${apiBase.replace(/\/$/, '')}/api/:path*`,
       },
     ];
   },
