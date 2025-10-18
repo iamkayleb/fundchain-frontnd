@@ -1,8 +1,16 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/campaigns": "pages/campaigns.js",
+  "/dashboard/admin": "pages/dashboard/admin.js",
+  "/dashboard/donor": "pages/dashboard/donor.js",
+  "/dashboard": "pages/dashboard.js",
+  "/_error": "pages/_error.js",
+  "/dashboard/institution": "pages/dashboard/institution.js",
+  "/dashboard/student": "pages/dashboard/student.js",
   "/": "pages/index.js",
+  "/login": "pages/login.js",
+  "/use-case-diagram": "pages/use-case-diagram.js",
   "/register": "pages/register.js",
-  "/login": "pages/login.js"
+  "/wireframes": "pages/wireframes.js"
 }
